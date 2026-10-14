@@ -19,7 +19,7 @@ class CreditCardPayment implements Payment{
 	
 	public Boolean pay(double amount) {
 		System.out.println("Charging " + amount + " to credit card ending in "
-				+ cardNumber.substring(cardNumber.length() - 4));
+				+ cardNumber.substring(cardNumber.length() - 4) + " : " + expiryDate);
 		return true;
 	}
 }
